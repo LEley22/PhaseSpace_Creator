@@ -1,0 +1,16 @@
+/run/numberOfThreads 4
+
+/run/setCut 5 um
+
+/run/initialize
+
+/process/em/deexcitationIgnoreCut true
+/process/em/fluo true
+/process/em/pixe true
+/process/em/auger true
+/process/em/deexcitation worldSolid true true true
+
+/process/em/deexcitation TargetSolid true true true
+
+/gun/energy 90 keV
+/run/beamOn 1000000

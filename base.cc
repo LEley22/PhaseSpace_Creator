@@ -32,7 +32,7 @@ int main(int argc, char** argv)
 //    #endif
     
     G4PhysListFactory factory;
-    G4VModularPhysicsList* physList=factory.GetReferencePhysList("FTFP_BERT__SS"); //add __SS for single scatter
+    G4VModularPhysicsList* physList=factory.GetReferencePhysList("FTFP_BERT"); //add __SS for single scatter
     physList->RegisterPhysics(new G4StepLimiterPhysics());
 
     runManager->SetUserInitialization(new detectorConstruction());
